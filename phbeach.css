@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.style1 {color: #064515}
+/* CSS Document */
+
+body {
+	background-color: #3471FF;
+}
+.homeimg {
+	clip: rect(auto,auto,auto,auto);
+	margin-right: auto;
+	margin-left: auto;
+}
+h1 {
+	color: #054717;
+}
+#Container {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-align: justify;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #CC6633;
+	font-size: 18px;
+	text-align: justify;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #0000CC;
+	text-align: center;
+}

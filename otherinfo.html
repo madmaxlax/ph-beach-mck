@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Other Information</title>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+<link href="phbeach.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {color: #064515}
+-->
+</style>
+</head>
+
+<body onload="MM_preloadImages('images/Layout images/home-over.gif','images/Layout images/home-up.gif','images/Layout images/home-overdown.gif','images/Layout images/contactinformation-over.gif','images/Layout images/contactinformation-up.gif','images/Layout images/contactinformation-overdown.gif','images/Layout images/pictures-over.gif','images/Layout images/pictures-up.gif','images/Layout images/pictures-overdown.gif','images/Layout images/otherinformation-over.gif','images/Layout images/otherinformation-up.gif','images/Layout images/otherinformation-overdown.gif')">
+<div class="#Container">
+  <p align="center"><img src="images/Layout images/header.gif" alt="title" width="673" height="202" /></p>
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="index.html" target="_top" onclick="MM_nbGroup('down','group1','Home','images/Layout images/home-over.gif',1)" onmouseover="MM_nbGroup('over','Home','images/Layout images/home-up.gif','images/Layout images/home-overdown.gif',1)" onmouseout="MM_nbGroup('out')"><img src="images/Layout images/home.gif" alt="home" name="Home" width="168" height="69" border="0" id="Home2" onload="" /></a></td>
+      <td><a href="contactinfo.html" target="_top" onclick="MM_nbGroup('down','group1','contactinformation','images/Layout images/contactinformation-over.gif',1)" onmouseover="MM_nbGroup('over','contactinformation','images/Layout images/contactinformation-up.gif','images/Layout images/contactinformation-overdown.gif',1)" onmouseout="MM_nbGroup('out')"><img src="images/Layout images/contactinformation.gif" alt="contact" name="contactinformation" width="168" height="69" border="0" id="contactinformation2" onload="" /></a></td>
+      <td><a href="pictures.html" target="_top" onclick="MM_nbGroup('down','group1','Pictures','images/Layout images/pictures-over.gif',1)" onmouseover="MM_nbGroup('over','Pictures','images/Layout images/pictures-up.gif','images/Layout images/pictures-overdown.gif',1)" onmouseout="MM_nbGroup('out')"><img src="images/Layout images/pictures.gif" alt="pictures" name="Pictures" width="168" height="69" border="0" id="Pictures2" onload="" /></a></td>
+      <td><a href="otherinfo.html" target="_top" onclick="MM_nbGroup('down','group1','otherinformation','images/Layout images/otherinformation-over.gif',1)" onmouseover="MM_nbGroup('over','otherinformation','images/Layout images/otherinformation-up.gif','images/Layout images/otherinformation-overdown.gif',1)" onmouseout="MM_nbGroup('out')"><img src="images/Layout images/otherinformation.gif" alt="other" name="otherinformation" width="168" height="69" border="0" id="otherinformation2" onload="" /></a></td>
+    </tr>
+  </table>
+  <p align="center">&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <table width="569" height="108" border="1" align="center" bordercolor="#CC6633" bgcolor="#3F9A52">
+    <tr>
+      <td colspan="3"><div align="center" class="style1">Quick Facts</div></td>
+    </tr>
+    <tr>
+      <td width="158"><span class="style1">Bedrooms.....7</span></td>
+      <td width="154"><span class="style1">Pool.....................No</span></td>
+      <td width="235"><span class="style1">Type...............House</span></td>
+    </tr>
+    <tr>
+      <td><span class="style1">Baths............3</span></td>
+      <td><span class="style1">Hot Tub...............No</span></td>
+      <td><span class="style1">Community.....</span></td>
+    </tr>
+    <tr>
+      <td><span class="style1">Sleeps...........14</span></td>
+      <td><span class="style1">Pets Allowed.......No</span></td>
+      <td><span class="style1">Rate (USD).....$950 - $3,600/week</span></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <h2 align="justify">Port Huron Beach Home - Luxurious vacation house located on lakefront <br />
+    with its own private beach. Located about 90 minutes or 80 miles from Detroit Metro Airport. There are 7 bedrooms as follows: 3 with queen beds, 4 with one double beds, 3 full bathrooms, fully equipped kitchen with two dishwashers and two ovens. The family room has a HDTV, Blue-Ray DVD, and VCR.  Two bedrooms also have a 35-inch tube TV.  Wifi is available for an extra charge.  Propane and charcoal barbecues are available.<br />
+  </h2>
+  <h2>Great for family vacations! However, the community does not allow weddings or receptions.  This house has been in my family for over 50 years.</h2>
+  <h3>Fully furnished luxurious house, large kitchen and breakfast area, separate dining room, Florida room featuring indoor and outdoor furniture and 180 degree view of the lake. There is a driveway for parking your car and there is room in the garage for one car. </h3>
+  <h3>A sidewalk on the lakeside goes north from the house for about a half mile and is great for walking or kids biking. The sand beach is private.</h3>
+  <h3>Best weather around! Beach activities, golf, fishing, and public tennis courts nearby. There are plenty of stores to shop at during your stay. Bring your passports the Blue Water Bridge to Canada is only about 2 miles south.</h3>
+  <h2>Summer rates range from $2,000 to $3,600 per week. Summer rental months are June, July and August for a full week or longer. Fall, Winter &amp; Spring rates range from $950 to $1,800 for a full week or longer. There are no daily rentals or weekend rentals. <br />
+    Sleeps 14 in summer, late spring and early fall. Sleeps only 10 in winter, late fall &amp; early spring since there is no heat in three of the second floor bedrooms.</h2>
+  <h2>Great Lake Freighters pass by the house during most days; some of them are over 1000 feet long.</h2>
+  <h2>&nbsp;</h2>
+  <h4>Nan Kalthoff McKenzie</h4>
+  <h4>301-949-7092 </h4>
+  <h4>301-793-3420</h4>
+  <h4><a href="mailto:nanraymckenzie@gmail.com">porthuronbeach@gmail.com</a></h4>
+</div>
+</body>
+</html>
